@@ -1,14 +1,15 @@
 angular
-    .module('dom.utils', [])
+    .module('angular-checkie', [])
     .directive('checkie', checkie);
 
 function checkie() {
     return {
-        restrict: 'E',
+        restrict: 'AE',
         replace: true,
         scope: {
             checkieMinIe: '@',
-            checkieMessage: '@'
+            checkieMessage: '@',
+            checkieDebug: '@'
         },
         transclude: true,
         template: '<div class="checkie" data-ng-class="{outdated: outdated}">{{msg}}<div data-ng-if="outdated === false" ng-transclude></div></div>',
@@ -16,7 +17,7 @@ function checkie() {
     };
 
     function link($scope, elem, attr) {
-        var ieversion = _getExplorerVersion();
+        var ieversion = ($scope.checkieDebug) ? $scope.checkieDebug : _getExplorerVersion();
 
         // set the minimum ie to 9 if no value was passed from the attributes
         $scope.checkieMinIe = ($scope.checkieMinIe && $scope.checkieMinIe.length) ? $scope.checkieMinIe : 9;
