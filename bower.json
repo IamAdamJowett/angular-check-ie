@@ -1,0 +1,21 @@
+{
+  "name": "angular-check-ie",
+  "version": "1.0.0",
+  "main": "checkie.directive.js",
+  "homepage": "https://github.com/IamAdamJowett/angular-check-ie",
+  "authors": [
+    "IamAdamJowett"
+  ],
+  "description": "An angular directive that does a check against a minimum Internet Explorer version before displaying content.",
+  "keywords": [
+    "angular",
+    "checkie",
+    "internet explorer"
+  ],
+  "license": "MIT",
+  "ignore": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IamAdamJowett/angular-check-ie"
+  }
+}
