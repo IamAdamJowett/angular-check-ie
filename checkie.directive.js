@@ -1,4 +1,6 @@
-(function () {
+(function() {
+    'use strict';
+
     angular
         .module('angular-checkie', [])
         .directive('checkie', checkie);
