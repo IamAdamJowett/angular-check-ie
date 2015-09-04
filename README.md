@@ -66,13 +66,13 @@ To hide your entire apps view from old browsers:
 
 By default, checkie will look for Internet Explorer 8 and below, but if you want to change that, you can do that via the `checkie-ie-min` attribute:
 
-    <checkie checkie-ie-min="8">
+    <checkie checkie-ie-min="9">
         <div ng-view="myApp"></div>
     </checkie>
     
 or 
 
-    <div data-checkie data-checkie-min-ie="8">
+    <div data-checkie data-checkie-min-ie="9">
         <div ng-view="myApp"></div>
     </div>
     
