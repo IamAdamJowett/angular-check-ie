@@ -18,6 +18,12 @@ This directive can wrap any content you may wish to not include for old browsers
 
 There are two easy ways to install the checkie directive:
 
+#### Node
+
+To install via npm, run:
+
+    npm install @iamadamjowett/angular-check-ie
+
 #### Bower
 
 To install via Bower, run:
