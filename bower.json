@@ -1,6 +1,6 @@
 {
   "name": "angular-check-ie",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "checkie.directive.js",
   "homepage": "https://github.com/IamAdamJowett/angular-check-ie",
   "authors": [
